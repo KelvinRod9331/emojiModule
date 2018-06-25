@@ -22,25 +22,46 @@ While developing a passion project of mine, I came to a roadblock where I wanted
 ![fig .5](/ReadMeImg/food_drinks.png)
 
 # Install
+
+**You Must Have React Installed**
+```$ npm install react```
+
+**After Installing React**
 ```$ npm install emoji.module```
 
 # Usage
 
 You must first import the component from the file
 ```Import { Emojis } from 'emojiModule'```
-Then you can use the **Emoji** component anywhere the developer chooses
+Then you can use the **Emojis** component anywhere the developer chooses
 
-``render(){
+``
+Import React, {Component} from 'react
+Import { Emojis } from 'emojiModule'
+
+class Example from Components{
+render(){
     <div>
-    <Emoji />
+    <Emojis />
     </div>
-}``
+}
+}
+
+``
 
 ## Passing Props
 To retrieve the emoji the user selected, the developer **MUST** pass a function as a prop. The function needs to take in an argument that will be assign to the emoji selected and within the function a state or a variable must be set to hold the value. Once function has been created pass the function the prop named 
 ``getEmoji``
 
 ``` 
+
+Import React, {Component} from 'react
+Import { Emojis } from 'emojiModule'
+
+class Example from Components{
+
+//This Function is going to be passed as a prop
+
 emojiSelected = value => {
     this.setState({
         emoji: value
@@ -56,6 +77,8 @@ render(){
         </div>
     )
 } 
+}
+
 ```
 
 ## Props
@@ -74,16 +97,16 @@ render(){
 |arrowPointAtCenter|Whether the arrow is pointed at the center of target, supported after antd@1.11+|boolean|false|
 
 
-#Contributers
+# Contributers
 - **React.js** [Link](https://reactjs.org/) 
 - **Ant.Design** [Link](https://ant.design/)
 - **Node.js** [Link](https://nodejs.org/en/)
 
-#Version
+# Version
 ```1.0```
 
-#Author
+# Author
 - Kelvin Rodriguez
 
-#License
+# License
 This project is licensed under the MIT License - see the LICENSE.md file for details
