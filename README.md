@@ -93,7 +93,7 @@ render(){
 | eClass | Class name for the emoji search bar    | string |-|
 |eStyle| Custom style for emoji search bar|object|-|
 
-### Below Are Ant.Design props used for this project please visit **Ant.Design** [Link](https://ant.design/)for more amazing styling components ###
+### Below Are Ant.Design props used for this project please visit [Ant.Design](https://ant.design/) for more amazing styling components ###
 
 | Property      | Description   | Type  | Default |
 | ------------- |:-------------:|:-----:|--------:|
