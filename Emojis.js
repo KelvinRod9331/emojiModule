@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Popover, Input } from "antd";
 
-export default class EmojiModule extends Component {
+export default class Emojis extends Component {
   /**
    * @constructor
    * The State Keys provided are keys used to sort the objects in the emoji's JSON file.
@@ -18,7 +18,8 @@ export default class EmojiModule extends Component {
       travel_places: {},
       objects: {},
       symbols: {},
-      flags: {}
+      flags: {},
+      defaulted: true
     };
   }
 
@@ -146,6 +147,7 @@ export default class EmojiModule extends Component {
     } = this.state;
 
     const { useDefaultStyle, eClass, eStyle } = this.props;
+
     const defaultStyle = {
       position: "fixed",
       width: "70%",
@@ -159,7 +161,7 @@ export default class EmojiModule extends Component {
       <div>
         <div
           className={eClass ? eClass : "emoji-search"}
-          style={useDefaultStyle ? defaultStyle : eStyle}
+          style={!useDefaultStyle ? eStyle : defaultStyle}
         >
           <Input
             placeholder="Search Emoji"
