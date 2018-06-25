@@ -1,26 +1,26 @@
 # Emojis Module
 A simple to use Emoji's Module that can be used for any Javascript project. Using React as the framework with the use of Ant Design, you can use this module to display a wide variety of sorted emojis'. Users' can also search for any particular emoji with the emoji search bar.
 
-### Here's an example where I utilized my Emoji Module for my Messaging App
+### Here's an example where I utilized my Emoji Module for my messaging app Universal Chat
 ![fig 1. Emoji Module](/ReadMeImg/emoji-display.png)
  [Universal Chat](https://uchat-universal.herokuapp.com/) 
 
-#Background
-While developing a passion project of mine, I came to a roadblock where I wanted to implement emoji's to my messaging app but couldn't find an easier way to display all the emoji's and have it categorized by groups. Searching for days I couldn't find the perfect module so I decided to make my own. I gather all the emojis and created a JSON file to store each character and title of the emoji and group them together by the type of emoji it belong to. With the use of **React.js** [Link](https://reactjs.org/) and **Ant.Design** [Link](https://ant.design/) I created a module that can be implemented in any Javascript project built on React Framework. Very simple to install and used.
+# Background
+While developing a passion project of mine, I came to a roadblock where I wanted to implement emoji's to my messaging app but couldn't find an easier way to display all the emoji's and have it categorized by groups. Searching for days I couldn't find the perfect module so I decided to make my own. I gather all the emojis and created a JSON file to store each character and title of the emoji and group them together by the type of emoji it belong to. With the use of  [React](https://reactjs.org/) and [Ant.Design](https://ant.design/) I created a module that can be implemented in any Javascript project built on React Framework. Very simple to install and used.
 
 
 #Features
 ## You can search for any emoji simply by typing the name of the emoji.
-![Image](/ReadMeImg/emoji-search.png)
+![fig 2.](/ReadMeImg/emoji-search.png)
 
 ## A Wide Variety of Emojis All Categorized
 
 ### Smiley & People
-![Image](/ReadMeImg/smiley_people.png)
+![fig .3](/ReadMeImg/smiley_people.png)
 ### Animals & Nature
-![Image](/ReadMeImg/animals_nature.png)
+![fig .4](/ReadMeImg/animals_nature.png)
 ### Food & Drinks
-![Image](/ReadMeImg/food_drinks.png)
+![fig .5](/ReadMeImg/food_drinks.png)
 
 #Install
 ```$ npm install emoji.module```
