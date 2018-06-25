@@ -88,7 +88,7 @@ render(){
 ## Props
 | Property      | Description   | Type  | Default |
 | ------------- |:-------------:|:-----:|--------:|
-| getEmoji     | Use to get the emoji user selected| function | true |
+| getEmoji     | Use to get the emoji user selected| function | - |
 | useDefaultStyle     | Default Style      |   boolean | true |
 | eClass | Class name for the emoji search bar    | string |-|
 |eStyle| Custom style for emoji search bar|object|-|
