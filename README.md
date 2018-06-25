@@ -105,7 +105,7 @@ render(){
 |arrowPointAtCenter|Whether the arrow is pointed at the center of target, supported after antd@1.11+|boolean|false|
 
 
-# Contributers
+# Contributors
 - [React](https://reactjs.org/) 
 - [Ant.Design](https://ant.design/)
 - [Node](https://nodejs.org/en/)
