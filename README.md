@@ -1,7 +1,7 @@
 # Emojis Module
 A simple to use Emoji's Module that can be used for any Javascript project. Using React as the framework with the use of Ant Design, you can use this module to display a wide variety of sorted emojis'. Users' can also search for any particular emoji with the emoji search bar.
 
-### Here's an example where I used my Emoji Module for my Messaging App
+### Here's an example where I utilized my Emoji Module for my Messaging App
 ![fig 1. Emoji Module](/ReadMeImg/emoji-display.png)
  [Universal Chat](https://uchat-universal.herokuapp.com/) 
 
