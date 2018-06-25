@@ -35,7 +35,7 @@ You must first import the component from the file
 ```Import { Emojis } from 'emojiModule'```
 Then you can use the **Emojis** component anywhere the developer chooses
 
-``
+```
 Import React, {Component} from 'react
 Import { Emojis } from 'emojiModule'
 
@@ -47,7 +47,7 @@ render(){
 }
 }
 
-``
+```
 
 ## Passing Props
 To retrieve the emoji the user selected, the developer **MUST** pass a function as a prop. The function needs to take in an argument that will be assign to the emoji selected and within the function a state or a variable must be set to hold the value. Once function has been created pass the function the prop named 
