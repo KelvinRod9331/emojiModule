@@ -106,9 +106,9 @@ render(){
 
 
 # Contributers
-- **React.js** [Link](https://reactjs.org/) 
-- **Ant.Design** [Link](https://ant.design/)
-- **Node.js** [Link](https://nodejs.org/en/)
+- [React](https://reactjs.org/) 
+- [Ant.Design](https://ant.design/)
+- [Node](https://nodejs.org/en/)
 
 # Version
 ```1.0```
