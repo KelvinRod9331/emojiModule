@@ -1,0 +1,16 @@
+{
+  "name": "emojimodule",
+  "version": "1.0.0",
+  "description": "This is a module to display all emoji categorized and used to display Emoji's",
+  "main": "Emojis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "antd": "^3.5.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.3.2"
+  },
+  "author": "Kelvin Rodriguez",
+  "license": "ISC"
+}
