@@ -36,7 +36,7 @@ You must first import the component from the file
 Then you can use the **Emojis** component anywhere the developer chooses
 
 ```
-Import React, {Component} from 'react
+Import React, {Component} from 'react'
 Import { Emojis } from 'emojiModule'
 
 class Example from Components{
@@ -55,10 +55,14 @@ To retrieve the emoji the user selected, the developer **MUST** pass a function 
 
 ``` 
 
-Import React, {Component} from 'react
+Import React, {Component} from 'react'
 Import { Emojis } from 'emojiModule'
 
-class Example from Components{
+class Example extends Components {
+    
+    state = {
+        emoji: null
+    }
 
 //This Function is going to be passed as a prop
 
