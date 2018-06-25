@@ -92,9 +92,13 @@ render(){
 | useDefaultStyle     | Default Style      |   boolean | true |
 | eClass | Class name for the emoji search bar    | string |-|
 |eStyle| Custom style for emoji search bar|object|-|
-|Below Are Ant.Design props used for this project please visit **Ant.Design** [Link](https://ant.design/)for more amazing styling components|
+
+### Below Are Ant.Design props used for this project please visit **Ant.Design** [Link](https://ant.design/)for more amazing styling components ###
+
+| Property      | Description   | Type  | Default |
+| ------------- |:-------------:|:-----:|--------:|
 |overlayStyle|Style of the tooltip card|object|-|
-|trigger|Tooltip trigger mode| `hover` | `focus` | `click` | `contextMenu` | `click` |
+|trigger|Tooltip trigger mode| `hover`  `focus`  `click`  `contextMenu` | `click` |
 |placement|The position of the tooltip relative to the target, which can be one of `top` `left` `right` `bottom` `topLeft` `topRight` `bottomLeft` `bottomRight` `leftTop` `leftBottom` `rightTop` `rightBottom`|string|topRight|
 |overlayClass|Class name of the tooltip card|string|-|
 |autoAdjustOverflow|Whether to adjust popup placement automatically when popup is off screen|boolean|true|
