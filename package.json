@@ -1,5 +1,5 @@
 {
-  "name": "emojimodule",
+  "name": "emoji.module",
   "version": "1.0.0",
   "description": "This is a module to display all emoji categorized and used to display Emoji's",
   "main": "Emojis.js",

@@ -1,7 +1,10 @@
+'use strict';
+
 import React, { Component } from "react";
 import { Popover, Input } from "antd";
+import "./css/index.css"
 
-export default class Emojis extends Component {
+class Emojis extends Component {
   /**
    * @constructor
    * The State Keys provided are keys used to sort the objects in the emoji's JSON file.
@@ -42,7 +45,7 @@ export default class Emojis extends Component {
 
   emojiOutput = e => {
     const { getEmoji } = this.props;
-    var emoji = e.target.id;
+    let emoji = e.target.id;
 
     /**
      * @prop @func getEmoji
@@ -366,3 +369,5 @@ export default class Emojis extends Component {
     );
   }
 }
+
+export default Emojis
