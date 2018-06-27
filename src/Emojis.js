@@ -7,10 +7,9 @@ class Emojis extends Component {
    * @constructor
    * The State Keys provided are keys used to sort the objects in the emoji's JSON file.
    */
-
-  constructor() {
-    super();
-    this.state = {
+constructor(){
+  super()
+  this.state = {
       emojiKeyInput: "",
       smileys_people: {},
       animals_nature: {},
@@ -22,7 +21,9 @@ class Emojis extends Component {
       flags: {},
       defaulted: true
     };
-  }
+}
+  
+  
 
   /**
    * @func handleEmojiInput
@@ -135,17 +136,17 @@ class Emojis extends Component {
   };
 
   emojiDisplay(){
-    const {
-      smileys_people,
-      animals_nature,
-      food_drinks,
-      activity,
-      travel_places,
-      objects,
-      symbols,
-      flags,
-      emojiKeyInput
-    } = this.state;
+    // const {
+    //   smileys_people,
+    //   animals_nature,
+    //   food_drinks,
+    //   activity,
+    //   travel_places,
+    //   objects,
+    //   symbols,
+    //   flags,
+    //   emojiKeyInput
+    // } = this.state;
 
     const { useDefaultStyle, eClass, eStyle } = this.props;
 
@@ -183,7 +184,7 @@ class Emojis extends Component {
             <div className="title">
               <h3>Smiley's {"&"} People</h3>
             </div>
-            {smileys_people.map((el, idx) => {
+            {this.state.smileys_people.map((el, idx) => {
               if (el[0].includes(emojiKeyInput)) {
                 return (
                   <span
@@ -202,7 +203,7 @@ class Emojis extends Component {
             <div className="title">
               <h3>Animals {"&"} Nature</h3>
             </div>
-            {animals_nature.map((el, idx) => {
+            {this.state.animals_nature.map((el, idx) => {
               if (el[0].includes(emojiKeyInput)) {
                 return (
                   <span
@@ -221,7 +222,7 @@ class Emojis extends Component {
             <div className="title">
               <h3>Food {"&"} Drinks</h3>
             </div>
-            {food_drinks.map((el, idx) => {
+            {this.state.food_drinks.map((el, idx) => {
               if (el[0].includes(emojiKeyInput)) {
                 return (
                   <span
@@ -240,7 +241,7 @@ class Emojis extends Component {
             <div className="title">
               <h3>Activity</h3>
             </div>
-            {activity.map((el, idx) => {
+            {this.state.activity.map((el, idx) => {
               if (el[0].includes(emojiKeyInput)) {
                 return (
                   <span
@@ -259,7 +260,7 @@ class Emojis extends Component {
             <div className="title">
               <h3>Travel {"&"} Places</h3>
             </div>
-            {travel_places.map((el, idx) => {
+            {this.state.travel_places.map((el, idx) => {
               if (el[0].includes(emojiKeyInput)) {
                 return (
                   <span
@@ -278,7 +279,7 @@ class Emojis extends Component {
             <div className="title">
               <h3>Objects</h3>
             </div>
-            {objects.map((el, idx) => {
+            {this.state.objects.map((el, idx) => {
               if (el[0].includes(emojiKeyInput)) {
                 return (
                   <span
@@ -297,7 +298,7 @@ class Emojis extends Component {
             <div className="title">
               <h3>Symbols</h3>
             </div>
-            {symbols.map((el, idx) => {
+            {this.state.symbols.map((el, idx) => {
               if (el[0].includes(emojiKeyInput)) {
                 return (
                   <span
@@ -316,7 +317,7 @@ class Emojis extends Component {
             <div className="title">
               <h3>Flags</h3>
             </div>
-            {flags.map((el, idx) => {
+            {this.state.flags.map((el, idx) => {
               if (el[0].includes(emojiKeyInput)) {
                 return (
                   <span
