@@ -43,7 +43,7 @@ constructor(){
    */
 
   emojiOutput(e){
-    const { getEmoji } = this.props;
+    // const { getEmoji } = this.props;
     let emoji = e.target.id;
 
     /**
@@ -52,7 +52,7 @@ constructor(){
      * The developer must create a function that will set the state every time emoji has been selected.
      */
 
-    getEmoji(emoji);
+    this.props.getEmoji(emoji);
   };
 
   /**
@@ -148,7 +148,7 @@ constructor(){
     //   emojiKeyInput
     // } = this.state;
 
-    const { useDefaultStyle, eClass, eStyle } = this.props;
+    // const { useDefaultStyle, eClass, eStyle } = this.props;
 
     const defaultStyle = {
       position: "fixed",
@@ -162,18 +162,18 @@ constructor(){
     return (
       <div>
         <div
-          className={eClass ? eClass : "emoji-search"}
-          style={!useDefaultStyle ? eStyle : defaultStyle}
+          className={this.props.eClass ? this.props.eClass : "emoji-search"}
+          style={!this.props.useDefaultStyle ? this.props.eStyle : defaultStyle}
         >
           <Input
             placeholder="Search Emoji"
             id="emoji-input"
             style={
-              useDefaultStyle
+              this.props.useDefaultStyle
                 ? {
                     width: "800px"
                   }
-                : eStyle
+                : this.props.eStyle
             }
             value={emojiKeyInput}
             onChange={this.handleEmojiInput}
